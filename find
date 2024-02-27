@@ -1,1 +1,1 @@
-find -name 'a*' -o '*z' -o 'z*a!' | tr -d " "
+find . -name a* -o *z -o z*a! | tr -d " "
