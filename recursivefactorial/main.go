@@ -9,4 +9,3 @@ func main() {
 	arg := 4
 	fmt.Println(piscine.RecursiveFactorial(arg))
 }
-
