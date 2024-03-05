@@ -13,6 +13,5 @@ func Sqrt(nb int) int {
 		return first
 	} else {
 		return 0
-    }
+	}
 }
-
