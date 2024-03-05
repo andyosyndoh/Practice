@@ -3,7 +3,7 @@ package piscine
 func Sqrt(nb int) int {
 	if nb == 0 {
 		return nb
-	} 
+	}
 	if nb == 1 {
 		return nb
 	}
