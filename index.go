@@ -14,6 +14,7 @@ func Index(s string, toFind string) int {
 		} else {
 			return -1
 		}
+	}
     return 0
 	
 }
