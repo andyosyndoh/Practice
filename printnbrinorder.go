@@ -20,5 +20,4 @@ func PrintNbrInOrder(n int) {
 	for _, digit := range result {
 		z01.PrintRune(digit)
 	}
-	z01.PrintRune('\n')
 }
