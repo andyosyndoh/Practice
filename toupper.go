@@ -1,11 +1,11 @@
 package piscine
 
 func ToUpper(s string) string {
-	capitalized := ""
+	new := ""
 	for i := 0; i < len(s); i++ {
-		if s[i] >= 'a' || s[i] <= 'z' {
-			capitalized += string(s[i] - 'a')
+		if s[i] >= 'a' && s[i] <= 'z' {
+			new = string(s[i]- 32) + string(s)
 		} 
 	}
-	return capitalized
+	return new
 }
