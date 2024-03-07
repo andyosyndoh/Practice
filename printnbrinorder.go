@@ -9,12 +9,11 @@ func PrintNbrInOrder(n int) {
 	digits := make([]int, 10)
 	result := make([]rune, 0, 10)
 	for n > 0 {
-		digit := n%10
+		digit := n % 10
 		digits[digit]++
 		n /= 10
 	}
-	
-	for i :=0; i < 10; i++ {
+	for i := 0; i < 10; i++ {
 		if i == 0 {
 			result = append(result, '0')
 		}
