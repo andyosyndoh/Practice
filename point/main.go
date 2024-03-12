@@ -1,9 +1,7 @@
 package main
 
-import (
+import "github.com/01-edu/z01"
 
-	"github.com/01-edu/z01"
-)
 
 type point struct {
 	x int
@@ -34,7 +32,6 @@ func Output(nb int) {
 	}
 	z01.PrintRune(nummod)
 }
-
 
 func main() {
 	points := &point{}
