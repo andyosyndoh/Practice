@@ -25,5 +25,5 @@ func main() {
 		return
 	}
 
-	fmt.Println(string(data))
+	fmt.Print(string(data))
 }
