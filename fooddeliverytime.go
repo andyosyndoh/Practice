@@ -2,8 +2,8 @@ package piscine
 
 type food struct {
 	preptime int
-  }
-  
+}
+
 func FoodDeliveryTime(order string) int {
 	menu := map[string]int{
 		"burger":  15,
