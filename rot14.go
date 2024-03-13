@@ -14,7 +14,7 @@ func Rot14(s string) string {
     }
     if (char >= 'A' && char <= 'Z') {
       if char + 14 > 'Z' {
-        new[i] = char + 14 -26
+        new[i] = char + 14 - 26
       } else {
         new[i] = char + 14
       }
