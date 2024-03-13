@@ -8,13 +8,13 @@ func DescendComb() {
 			for k := '9'; k >= '0'; k-- {
 				for l := '8'; l >= '0'; l-- {
 					if i == k && j != l && l < j {
-						z01.PrintRune(' ')
 						z01.PrintRune(i)
 						z01.PrintRune(j)
 						z01.PrintRune(' ')
 						z01.PrintRune(k)
 						z01.PrintRune(l)
 						z01.PrintRune(',')
+						z01.PrintRune(' ')
 					}
 				}
 			}
