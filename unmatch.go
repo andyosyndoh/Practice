@@ -1,17 +1,16 @@
 package piscine
 
 func Unmatch(a []int) int {
-	new := make(map[int]int)
 	for _, char := range a {
-		new[char]++
-	}
-	minUnmatched := -1
-	for char, count := range new {
-		if count == 1 {
-			if minUnmatched == -1 || char < minUnmatched {
-				minUnmatched = char
+		i := 0
+		for _, b := range a {
+			if b == char {
+				i++
 			}
 		}
+		if i == 1 || i%2 == 2 {
+			return char
+		}
 	}
-	return minUnmatched
+	return -1
 }
