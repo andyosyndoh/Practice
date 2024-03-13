@@ -6,7 +6,7 @@ func Unmatch(a []int) int {
 		new[char]++
 	}
 	for char, count := range new {
-		if count%2 != 0 {
+		if count%2 == 1 {
 			return char
 		}
 	}
