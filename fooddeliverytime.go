@@ -5,9 +5,9 @@ type food struct {
   }
   
 func FoodDeliveryTime(order string) int {
-	menu := map[string]int {
-		"burger": 15,
-		"chips": 10,
+	menu := map[string]int{
+		"burger":  15,
+		"chips":   10,
 		"nuggets": 12,
 	}
 	preptime, found := menu[order]
@@ -15,6 +15,4 @@ func FoodDeliveryTime(order string) int {
 		return 0
 	}
 	return preptime
-
 }
-  
