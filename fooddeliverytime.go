@@ -12,7 +12,7 @@ func FoodDeliveryTime(order string) int {
 	}
 	preptime, found := menu[order]
 	if !found {
-		return 0
+		return 404
 	}
 	return preptime
 }
