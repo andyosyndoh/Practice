@@ -5,10 +5,15 @@ func Unmatch(a []int) int {
 	for _, char := range a {
 		new[char]++
 	}
-	for char, count := range new {
-		if count%2 == 1 {
-			return char
-		}
-	}
-	return -1
+	minUnmatched := -1
+    for char, count := range new {
+        if count == 1 {
+            if minUnmatched == -1 || char < minUnmatched {
+                minUnmatched = char
+            }
+        }
+    }
+    
+    return minUnmatched
 }
+
