@@ -7,6 +7,7 @@ func ShoppingSummaryCounter(str string) map[string]int {
 	}
 	return shop
 }
+
 func Splitted(s string) []string {
 	shop := make([]string, 0, len(s))
 
