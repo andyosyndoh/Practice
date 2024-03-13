@@ -8,7 +8,7 @@ func Unmatch(a []int) int {
 				i++
 			}
 		}
-		if i == 1 || i%2 == 2 {
+		if i == 1 || i%2 == 1 {
 			return char
 		}
 	}
