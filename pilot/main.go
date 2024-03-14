@@ -3,9 +3,9 @@ package main
 import "fmt"
 
 type Pilot struct {
-	Name string
-	Life int
-	Age int
+	Name     string
+	Life     int
+	Age      int
 	Aircraft int
 }
 
