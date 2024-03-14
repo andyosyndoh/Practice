@@ -7,7 +7,7 @@ type Door struct {
 }
 
 const (
-	OPEN = true
+	OPEN   = true
 	CLOSED = false
 )
 
@@ -17,7 +17,7 @@ func PrintStr(s string) {
 	}
 }
 
-func OpenDoor(ptrDoor *Door){
+func OpenDoor(ptrDoor *Door) {
 	PrintStr("Door opening....")
 	ptrDoor.state = OPEN
 }
@@ -41,7 +41,7 @@ func main() {
 	door := Door{}
 
 	OpenDoor(&door)
-	if IsDoorClose(door){
+	if IsDoorClose(door) {
 		OpenDoor(&door)
 	}
 	if IsDoorOpen(door) {
