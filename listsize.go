@@ -25,7 +25,7 @@ func ListPushFront(l *List, data interface{}) {
 func ListSize(l *List) int {
   count := 0
   new := l.Head
-  if new != nil {
+  if new != nil{
     count++
     new = new.Next
   }
