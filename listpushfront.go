@@ -10,7 +10,6 @@ type List struct {
 	Tail *NodeL
 }
 
-
 func ListPushFront(l *List, data interface{}) {
 	n := &NodeL{Data: data}
 
