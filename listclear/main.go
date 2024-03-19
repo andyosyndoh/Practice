@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
-
 	"piscine"
 )
 
-type List = piscine.List
-type Node = piscine.NodeL
+type (
+	List = piscine.List
+	Node = piscine.NodeL
+)
 
 func PrintList(l *List) {
 	link := l.Head
