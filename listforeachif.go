@@ -24,7 +24,6 @@ func ListForEachIf(l *List, f func(*NodeL), cond func(*NodeL) bool) {
 	for a != nil {
 		if cond(a) {
 			f(a)
-
 		}
 		a = a.Next
 	}
