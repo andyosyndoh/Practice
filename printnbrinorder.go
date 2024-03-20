@@ -3,26 +3,39 @@ package piscine
 import "github.com/01-edu/z01"
 
 func PrintNbrInOrder(n int) {
-	if n < 0 {
-		return
+	var s []int
+
+	if n == 0 {
+		s = append(s, 0)
 	}
-	digits := make([]int, 10)
-	result := make([]rune, 0, 10)
-	for n > 0 {
-		digit := n % 10
-		digits[digit]++
+	for i := 1; n > 0; i++ {
+		s = append(s, n%10)
 		n /= 10
 	}
-	for i := 0; i < 10; i++ {
-		if i == 0 {
-			result = append(result, '0')
-		}
-		for j := 0; j < digits[i]; j++ {
-			result = append(result, rune(i)+'0')
+	Sort(s)
+	for i := range s {
+		z01.PrintRune(rune('0' + s[i]))
+	}
+}
+
+func Sort(table []int) {
+
+	var length int = 0
+	for i := range table {
+		i++
+		length++
+	}
+
+	i := 1
+	for i < length {
+		if table[i-1] > table[i] {
+			tmp := table[i-1]
+			table[i-1] = table[i]
+			table[i] = tmp
+			i = 1
+		} else {
+			i++
+
 		}
 	}
-	for _, digit := range result {
-		z01.PrintRune(digit)
-	}
-	z01.PrintRune(0)
 }
