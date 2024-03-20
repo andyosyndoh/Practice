@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
 	"os"
+
+	"github.com/01-edu/z01"
 )
 
 func main() {
@@ -10,7 +11,7 @@ func main() {
 	new := args[0]
 
 	name := []rune(new)
-	for  ch := range name {
+	for ch := range name {
 		z01.PrintRune(name[ch])
 	}
 	z01.PrintRune('\n')

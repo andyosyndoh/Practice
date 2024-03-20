@@ -10,7 +10,6 @@ func Capitalize(s string) string {
 					runes[i+1] = runes[i+1] - 'a' + 'A'
 				} else if runes[i] >= 'A' && runes[i] <= 'Z' {
 					runes[i] = runes[i] - 'A' + 'a'
-
 				} else {
 					runes[i+1] = runes[i+1]
 				}
