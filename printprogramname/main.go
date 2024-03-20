@@ -8,7 +8,7 @@ import (
 
 func main() {
 	args := os.Args
-	new := args[0]
+	new := args[0][2:]
 
 	name := []rune(new)
 	for ch := range name {
