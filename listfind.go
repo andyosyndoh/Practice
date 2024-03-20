@@ -5,14 +5,13 @@ func CompStr(a, b interface{}) bool {
 }
 
 func ListFind(l *List, ref interface{}, comp func(a, b interface{}) bool) *interface{} {
-	a := l.Head
+	b := l.Head
 
-	for a != nil {
-		if comp(ref, a.Data) {
-			return &a.Data
-
+	for b != nil {
+		if comp(ref, b.Data) {
+			return &b.Data
 		}
-		a = a.Next
+		b = b.Next
 	}
 	return nil
 }
