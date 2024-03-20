@@ -19,7 +19,7 @@ func PrintList(l *piscine.List) {
 		fmt.Print(it.Data, "->")
 		it = it.Next
 	}
-	fmt.Print("nil","\n")
+	fmt.Print("nil", "\n")
 }
 
 func main() {
