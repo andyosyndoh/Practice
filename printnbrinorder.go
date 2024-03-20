@@ -19,7 +19,6 @@ func PrintNbrInOrder(n int) {
 }
 
 func Sort(table []int) {
-
 	var length int = 0
 	for i := range table {
 		i++
@@ -35,7 +34,6 @@ func Sort(table []int) {
 			i = 1
 		} else {
 			i++
-
 		}
 	}
 }
