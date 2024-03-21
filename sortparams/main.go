@@ -9,34 +9,19 @@ import (
 func main() {
 	arguments := os.Args[1:]
 
-	for i := range arguments {
-		runes := []rune(arguments[i])
-		j := 0
-		if i != 0 && (runes[j] >= '0' && runes[j] <= '9') {
-			for _, j := range arguments[i] {
-				z01.PrintRune(j)
-				z01.PrintRune('\n')
+	for i := 0; i < len(arguments)-1; i++ {
+		for k := i + 1; k < len(arguments); k++ {
+			if arguments[i] > arguments[k] {
+				arguments[i], arguments[k] = arguments[k], arguments[i]
 			}
 		}
+
 	}
-	for i := range arguments {
-		runes := []rune(arguments[i])
-		j := 0
-		if i != 0 && (runes[j] >= 'A' && runes[j] <= 'Z') {
-			for _, j := range arguments[i] {
-				z01.PrintRune(j)
-				z01.PrintRune('\n')
-			}
+	for j := 0; j < len(arguments); j++ {
+		for _, ch := range arguments[j] {
+			z01.PrintRune(ch)
 		}
+		z01.PrintRune('\n')
 	}
-	for i := range arguments {
-		runes := []rune(arguments[i])
-		j := 0
-		if i != 0 && (runes[j] >= 'a' && runes[j] <= 'z') {
-			for _, j := range arguments[i] {
-				z01.PrintRune(j)
-				z01.PrintRune('\n')
-			}
-		}
-	}
+	
 }
