@@ -2,8 +2,8 @@ package piscine
 
 func BasicJoin(elems []string) string {
 	q := ""
-	for _, char := range elems {
-		q = q + string(char)
+	for _,ch := range elems {
+		q = q + string(ch)
 	}
 	return q
 }
