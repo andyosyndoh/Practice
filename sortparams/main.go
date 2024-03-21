@@ -15,7 +15,6 @@ func main() {
 				arguments[i], arguments[k] = arguments[k], arguments[i]
 			}
 		}
-
 	}
 	for j := 0; j < len(arguments); j++ {
 		for _, ch := range arguments[j] {
@@ -23,5 +22,4 @@ func main() {
 		}
 		z01.PrintRune('\n')
 	}
-	
 }
