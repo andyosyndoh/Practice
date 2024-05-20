@@ -9,7 +9,6 @@ func FindNextPrime(nb int) int {
 		for i := nb; i <= nb+1000; i++ {
 			if IsPrime(i) {
 				return i
-				break
 			}
 		}
 	}
