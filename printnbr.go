@@ -14,15 +14,15 @@ func PrintNbr(n int) {
 		n = -n
 	}
 	for n > 0 {
-		digit := n%10
+		digit := n % 10
 		s = append(s, digit)
-		n = n/10
+		n = n / 10
 	}
 	if isnegative {
 		z01.PrintRune('-')
 	}
 
-	for i := len(s)-1; i >= 0 ; i-- {
+	for i := len(s) - 1; i >= 0; i-- {
 		z01.PrintRune(rune('0' + s[i]))
 	}
 }

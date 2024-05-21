@@ -11,9 +11,9 @@ func Itoa(n int) string {
 	}
 	new := ""
 	for n > 0 {
-		digit := n%10
-		new = string('0' + digit) + new
-		n = n/10
+		digit := n % 10
+		new = string('0'+digit) + new
+		n = n / 10
 	}
 	if isnegative {
 		new = "-" + new

@@ -13,14 +13,13 @@ func main() {
 	arg1 := os.Args[1]
 	arg2 := os.Args[2]
 
-	result := wdmatch(arg1,arg2)
+	result := wdmatch(arg1, arg2)
 
 	fmt.Print(result)
-
 }
 
 func wdmatch(s, w string) string {
-	var i,j int
+	var i, j int
 	for i < len(s) && j < len(w) {
 		if s[i] == w[j] {
 			i++
