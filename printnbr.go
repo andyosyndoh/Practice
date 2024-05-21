@@ -8,11 +8,21 @@ func PrintNbr(n int) {
 	if n == 0 {
 		s = append(s, 0)
 	}
-	for i := 1; n > 0; i++ {
-		s = append(s, n%10)
-		n /= 10
+	isnegative := false
+	if n < 0 {
+		isnegative = true
+		n = -n
 	}
-	for i := range s {
+	for n > 0 {
+		digit := n%10
+		s = append(s, digit)
+		n = n/10
+	}
+	if isnegative {
+		z01.PrintRune('-')
+	}
+
+	for i := len(s)-1; i >= 0 ; i-- {
 		z01.PrintRune(rune('0' + s[i]))
 	}
 }
