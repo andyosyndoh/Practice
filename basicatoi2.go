@@ -2,7 +2,7 @@ package piscine
 
 func BasicAtoi2(s string) int {
 	for _, ch := range s {
-		if ch >= '1' && ch <= '9' && ch != ' ' {
+		if ch >= '1' && ch <= '9'{
 			new := 0
 			for _, val := range s {
 				new = new*10 + int(val-'0')
