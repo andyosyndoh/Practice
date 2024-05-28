@@ -10,27 +10,21 @@ func main() {
 		return
 	}
 	num := atoi(os.Args[1])
+
 	if num == 2 {
 		fmt.Println(true)
-		return
 	}
 	if num == 3 {
 		fmt.Println(false)
-		return
 	}
-	i := 2 * 2
-	for i <= num {
-		if i == num {
+	x  := 2
+	for x < num {
+		x *= 2
+		if x == num {
 			fmt.Println(true)
-			break
 		}
-		i *= 2
-		if i > num {
-			fmt.Println(false)
-			break
-		}
-		
 	}
+	fmt.Println(false)
 }
 
 func atoi(s string) int {

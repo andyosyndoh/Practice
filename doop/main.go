@@ -71,27 +71,21 @@ func main() {
 
 func atoi(m string) int {
 	// d := []rune(m)
+	n := 0
 	for _, ch := range m {
 		if ch >= '0' && ch <= '9' {
-			continue
+			n = n*10 + int(ch-'0')
 		} else {
 			os.Exit(0)
 		}
-	}
-	if m == "0" {
-		return 0
-	}
-	n := 0
-	for _, ch := range m {
-		n = n*10 + int(ch-'0')
 	}
 	return n 
 }
 
 func itoa(n int) string {
-	if n == 0 {
-		return "0"
-	}
+	// if n == 0 {
+	// 	return "0"
+	// }
 	isneg := false
 	if n < 0 {
 		isneg = true
