@@ -21,10 +21,10 @@ func main() {
 	initializeBoard()
 	currentPlayer = X
 	for {
+		clearScreen()
 		printBoard()
 		row, col := getPlayerMove()
 		makeMove(row, col)
-		
 		if isGameOver(row, col) {
 			printBoard()
 			fmt.Printf("Player %s wins!\n", currentPlayer)
@@ -69,7 +69,7 @@ func getPlayerMove() (int, int) {
 	fmt.Printf("Player %s's turn. Enter row (0-2): ", currentPlayer)
 	fmt.Scan(&row)
 	if row < 0 || row > 2 {
-		fmt.Printf("Player %s to repeat please input 0,1 0r 2:", currentPlayer)
+		fmt.Printf("Player %s to repeat please input 0,1 0r 2: ", currentPlayer)
 		fmt.Scan(&row)
 		if row < 0 || row > 2 {
 			fmt.Println("Game terminated because of breaking rules")
@@ -79,7 +79,7 @@ func getPlayerMove() (int, int) {
 	fmt.Printf("Player %s's turn. Enter column (0-2): ", currentPlayer)
 	fmt.Scan(&col)
 	if col < 0 || col > 2 {
-		fmt.Printf("Player %s to repeat please input 0,1 0r 2:", currentPlayer)
+		fmt.Printf("Player %s to repeat please input 0,1 0r 2: ", currentPlayer)
 		fmt.Scan(&col)
 		if col < 0 || col > 2 {
 			fmt.Println("Game terminated because of breaking rules")
@@ -92,7 +92,7 @@ func getPlayerMove() (int, int) {
 func makeMove(row, col int) {
 	if board[row][col] == EMPTY {
 		board[row][col] = currentPlayer
-	} 
+	}
 }
 
 func switchPlayer() {

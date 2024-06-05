@@ -18,7 +18,7 @@ func main() {
 		ref = num1
 	}
 
-	for i := ref+1; i <= ref*100; i++ {
+	for i := ref + 1; i <= ref*100; i++ {
 		if i%num1 == 0 && i%num2 == 0 {
 			fmt.Println(i)
 			break
@@ -42,5 +42,5 @@ func atoi(m string) int {
 	for _, ch := range m {
 		n = n*10 + int(ch-'0')
 	}
-	return n 
+	return n
 }

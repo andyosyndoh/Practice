@@ -8,7 +8,7 @@ func main() {
 	if len(os.Args) == 1 || len(os.Args) > 4 {
 		return
 	}
-	operators := []string{"*","/","-","+","%"}
+	operators := []string{"*", "/", "-", "+", "%"}
 
 	op := os.Args[2]
 
@@ -21,7 +21,6 @@ func main() {
 		} else {
 			cont = false
 		}
-
 	}
 	if !cont {
 		return
@@ -46,27 +45,25 @@ func main() {
 		return
 	}
 	if op == "+" {
-		result := itoa(num1+num2)
+		result := itoa(num1 + num2)
 		os.Stdout.WriteString(result + "\n")
 	}
 	if op == "*" {
-		result := itoa(num1*num2)
+		result := itoa(num1 * num2)
 		os.Stdout.WriteString(result + "\n")
 	}
 	if op == "-" {
-		result := itoa(num1-num2)
+		result := itoa(num1 - num2)
 		os.Stdout.WriteString(result + "\n")
 	}
 	if op == "/" {
-		result := itoa(num1/num2)
+		result := itoa(num1 / num2)
 		os.Stdout.WriteString(result + "\n")
 	}
 	if op == "%" {
-		result := itoa(num1%num2)
+		result := itoa(num1 % num2)
 		os.Stdout.WriteString(result + "\n")
 	}
-	
-	
 }
 
 func atoi(m string) int {
@@ -79,7 +76,7 @@ func atoi(m string) int {
 			os.Exit(0)
 		}
 	}
-	return n 
+	return n
 }
 
 func itoa(n int) string {
@@ -93,8 +90,8 @@ func itoa(n int) string {
 	}
 	res := ""
 	for n > 0 {
-		digit := n%10
-		res = string('0'+digit) + res 
+		digit := n % 10
+		res = string('0'+digit) + res
 		n /= 10
 	}
 	if isneg {

@@ -43,7 +43,6 @@ func main() {
 
 	answer := []string{}
 	ans := ""
-	
 	num := 0
 	final := ""
 

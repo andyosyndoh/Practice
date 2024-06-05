@@ -12,7 +12,7 @@ func Chunk(slice []int, size int) {
 		if count < size {
 			new = append(new, slice[i])
 		}
-		count ++ 
+		count++ 
 		if count == size || i == len(slice)-1 {
 			new2 = append(new2, new)
 			new = []int{}
@@ -24,5 +24,4 @@ func Chunk(slice []int, size int) {
 	} else {
 		fmt.Println(new2)
 	}
-	
 }

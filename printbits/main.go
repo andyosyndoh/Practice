@@ -11,12 +11,20 @@ func main() {
 	}
 
 	num := atoi(os.Args[1])
+	res := ""
+	result := ""
 
 	for num > 0 {
-		fmt.Print(num%2)
-		num = num/2
+		res = string((num % 2) + '0')
+		result = res + result
+		num = num / 2
 	}
-	fmt.Println()
+
+	zeros := ""
+	for i := 0; i < 8-len(result); i++ {
+		zeros += "0"
+	}
+	fmt.Println(zeros + result)
 }
 
 func atoi(s string) int {

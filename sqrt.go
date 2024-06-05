@@ -20,7 +20,6 @@ func Sqrt(nb int) int {
 	}
 	return first
 
-
 	// for i := 0 ; i <= nb; i++ {
 	// 	if i*i == nb {
 	// 		return i

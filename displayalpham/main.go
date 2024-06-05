@@ -7,7 +7,7 @@ func main() {
 		if (i-'a')%2 == 0 {
 			z01.PrintRune(i)
 		} else {
-			z01.PrintRune(i-32)
+			z01.PrintRune(i - 32)
 		}
 	}
 	z01.PrintRune('\n')

@@ -17,4 +17,3 @@ func main() {
 	piscine.ReduceInt(as, sum)
 	piscine.ReduceInt(as, div)
 }
-

@@ -23,8 +23,5 @@ func main() {
 			ans += i
 		}
 	}
-
 	fmt.Println(ans)
-
 }
-

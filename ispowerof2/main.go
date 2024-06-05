@@ -11,20 +11,11 @@ func main() {
 	}
 	num := atoi(os.Args[1])
 
-	if num == 2 {
+	if num > 0 && num&(num-1) == 0 {
 		fmt.Println(true)
-	}
-	if num == 3 {
+	} else {
 		fmt.Println(false)
 	}
-	x  := 2
-	for x < num {
-		x *= 2
-		if x == num {
-			fmt.Println(true)
-		}
-	}
-	fmt.Println(false)
 }
 
 func atoi(s string) int {
