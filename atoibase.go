@@ -19,4 +19,3 @@ func atoi(s string) int {
 	}
 	return num
 }
-

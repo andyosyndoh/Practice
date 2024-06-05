@@ -32,15 +32,13 @@ func main() {
 	for _, ch := range args {
 		if Isvowel(ch) {
 			ch = list[len(list)-count]
-			result += string(ch) 
+			result += string(ch)
 			count++
 		} else {
 			result += string(ch)
 		}
-		
 	}
 	fmt.Println(result)
-
 }
 
 func Isvowel(s rune) bool {

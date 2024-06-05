@@ -3,9 +3,6 @@ package main
 import (
 	"fmt"
 	"os"
-	// "strconv"
-
-	//"github.com/01-edu/z01"
 )
 
 func main() {
