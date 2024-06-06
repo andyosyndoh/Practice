@@ -7,6 +7,9 @@ import (
 )
 
 func main() {
+	if len(os.Args) == 1 {
+		return
+	}
 	args := []string{}
 	up := false
 	if os.Args[1] == "--upper" {
