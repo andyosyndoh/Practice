@@ -2,7 +2,6 @@ package main
 
 import (
 	"os"
-	"piscine"
 
 	"github.com/01-edu/z01"
 )
@@ -19,7 +18,7 @@ func main() {
 
 	argnum := []int{}
 	for _, str := range args {
-		num := piscine.Atoi(str)
+		num := atoi(str)
 		if num < 1 || num > 26 {
 			num = 0
 		}
@@ -49,4 +48,15 @@ func main() {
 		}
 	}
 	z01.PrintRune('\n')
+}
+
+func atoi(s string) int {
+	if s == "0" {
+		return 0
+	}
+	num := 0
+	for _, ch := range s {
+		num = num*10 + int(ch-'0')
+	}
+	return num
 }
