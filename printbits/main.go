@@ -11,13 +11,15 @@ func main() {
 	}
 
 	num := atoi(os.Args[1])
-	res := ""
+	res := 0
 	result := ""
 
+	bits := "01"
+
 	for num > 0 {
-		res = string((num % 2) + '0')
-		result = res + result
-		num = num / 2
+		res = (num % len(bits))
+		result = string(bits[res]) + result
+		num = num / len(bits)
 	}
 
 	zeros := ""
