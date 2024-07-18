@@ -11,8 +11,8 @@ func main() {
 	new := args[0][2:]
 
 	name := []rune(new)
-	for ch := range name {
-		z01.PrintRune(name[ch])
+	for i := range name {
+		z01.PrintRune(name[i])
 	}
 	z01.PrintRune('\n')
 }
