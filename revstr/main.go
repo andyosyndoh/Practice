@@ -23,12 +23,12 @@ func main() {
 	}
 
 	if len(newstr) > 1 {
-		for i := len(newstr)-1; i > 0 ; i-- {
+		for i := len(newstr) - 1; i > 0; i-- {
 			result += newstr[i] + " "
 		}
 	} else {
 		result = newstr[0] + " "
 	}
-	
+
 	fmt.Println(result[:len(result)-1])
 }

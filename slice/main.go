@@ -18,7 +18,7 @@ func Slice(a []string, nbrs ...int) []string {
 		return a[nbrs[0]:]
 	}
 	if len(nbrs) == 1 && nbrs[0] < 0 {
-		i := len(a)+ nbrs[0]
+		i := len(a) + nbrs[0]
 		return a[i:]
 	}
 	if nbrs[0] > 0 && nbrs[1] > 0 {
@@ -29,6 +29,6 @@ func Slice(a []string, nbrs ...int) []string {
 		finish := len(a) + nbrs[1]
 		return a[start:finish]
 	}
-	
+
 	return nil
 }

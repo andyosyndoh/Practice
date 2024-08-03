@@ -21,7 +21,7 @@ func AtoiBase(str string, base string) int {
 			if base[j] == '+' || base[j] == '-' {
 				return 0
 			}
-			if base[j] == str[i]{
+			if base[j] == str[i] {
 				num = j
 			}
 		}
