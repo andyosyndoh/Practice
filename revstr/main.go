@@ -29,6 +29,5 @@ func main() {
 	} else {
 		result = newstr[0] + " "
 	}
-
 	fmt.Println(result[:len(result)-1])
 }

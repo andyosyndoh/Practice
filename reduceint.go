@@ -1,8 +1,9 @@
 package piscine
 
 import (
-	"github.com/01-edu/z01"
 	"strconv"
+
+	"github.com/01-edu/z01"
 )
 
 func ReduceInt(a []int, f func(int, int) int) {

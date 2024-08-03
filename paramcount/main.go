@@ -19,7 +19,6 @@ func main() {
 		z01.PrintRune(ch)
 	}
 	z01.PrintRune('\n')
-
 }
 
 func Itoa(s int) string {
