@@ -29,6 +29,5 @@ func Slice(a []string, nbrs ...int) []string {
 		finish := len(a) + nbrs[1]
 		return a[start:finish]
 	}
-
 	return nil
 }
