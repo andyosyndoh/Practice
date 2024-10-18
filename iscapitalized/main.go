@@ -19,6 +19,6 @@ func IsCapitalized(str string) bool {
 	return true
 }
 
-func Small(r rune)bool {
+func Small(r rune) bool {
 	return r >= 'a' && r <= 'z'
 }

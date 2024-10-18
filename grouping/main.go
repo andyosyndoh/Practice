@@ -6,8 +6,7 @@ import (
 	"strings"
 )
 
-
-func main(){
+func main() {
 	if len(os.Args) != 3 {
 		return
 	}
@@ -28,13 +27,13 @@ func main(){
 
 	count := 0
 	for _, word := range words {
-		for _, reg := range regs{
+		for _, reg := range regs {
 			if strings.Contains(word, reg) {
 				count++
-				if word[len(word)-1] == ','{
+				if word[len(word)-1] == ',' {
 					word = word[:len(word)-1]
 				}
-				fmt.Printf("%v: %v\n", count,word)
+				fmt.Printf("%v: %v\n", count, word)
 			}
 		}
 	}
